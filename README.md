@@ -38,7 +38,7 @@ go build run ProgressBar.go
 - "fyne.io/fyne/v2/widget" 是Fyne工具包中的一個包,提供了一些常用的GUI組件,如按鈕、標籤、輸入框等。  
 總而言之,這段代碼導入了Go語言標準庫中的一些常用包,以及Fyne跨平台GUI工具包中的一些核心包,為構建GUI應用程序做好準備  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/56a12293-193e-4495-bf82-e7a8b2148ab6)  
----  
+***    
 在 Golang 中，宣告變數時，可以直接指定值，或者使用型別推導，更簡單地用 := 來宣告局部變數。例如:  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/8abe91d1-5e30-4d2e-a32f-fe223c1286b5)  
 也可以使用 var 關鍵字進行普通聲明，然後指定變數名稱和類型，再賦予初始值。例如:  
@@ -61,7 +61,7 @@ go build run ProgressBar.go
 - progressBar: 一個進度條控制元件,可能用於顯示拷貝進度。  
 這些控制元件被垂直排列在一個盒子佈局中,可能用於構建一個文件拷貝工具的用戶界面。當用戶點擊相關按鈕時,應用程序會執行相應的操作,如選擇源文件、選擇目標目錄、執行拷貝操作等,並在標籤和進度條中實時顯示相關信息。
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/3a1652f4-0b19-47ef-a9b1-f8cd8cf1a879)
----
+***
 在第76行，os.Stat(sourceFile) 這行代碼的作用是獲取指定文件或目錄的文件信息(metadata)，其中 **os** 是 Go 語言中一個內建的包(package),提供了操作系統相關的功能,比如文件系統的操作。  
 **Stat** 是 os 包中的一個函數,它的作用是返回一個描述指定文件對象(文件或目錄)的 FileInfo 類型值。  
 **sourceFile** 是一個字符串類型的變量,表示你要獲取文件信息的文件路徑。  
