@@ -15,22 +15,22 @@
 ```
 go run ProgressBar.go
 ```
-2.  方法2:下載完程式後，在終端執行以下代碼，之後會在同一個目錄生成一個.exe執行檔  
+### 2.  方法2:下載完程式後，在終端執行以下代碼，之後會在同一個目錄生成一個.exe執行檔  
 ```
 go build run ProgressBar.go
 ```
 ---
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/d317e269-780e-4488-aba1-da5e1d306ba7)   
-3.  點擊"Select Source File"和"Select Target Directory"選擇要複製的檔案與要複製的位置( **注意**!!這裡只有英文能正常顯示，中文會變成?圖示)  
+### 3.  點擊"Select Source File"和"Select Target Directory"選擇要複製的檔案與要複製的位置( **注意**!!這裡只有英文能正常顯示，中文會變成?圖示)  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/aaff98fd-526f-49e7-8a73-c0d0ffb4f99e)  
-4.  點擊"Start Copy"程式就會開始執行複製，同時下面的進度條也會開始跑  
+### 4.  點擊"Start Copy"程式就會開始執行複製，同時下面的進度條也會開始跑  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/3636e2a6-94da-4c91-b497-985c7247c8c1)  
-5.  複製完成後會跳出"File copied successfully!"的訊息  
+### 5.  複製完成後會跳出"File copied successfully!"的訊息  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/ef8bb815-d764-4b25-8593-26a08d916dab)  
 ***
 ## 程式碼簡介
-第 1 行：在 Go 中，每個程式都是套件的一部分。我們使用關鍵字來定義它 package。在此範例中，程式屬於 main套件。  
-第 2 行： 讓我們匯入fmt套件中包含的檔案:  
+### 第 1 行：在 Go 中，每個程式都是套件的一部分。我們使用關鍵字來定義它 package。在此範例中，程式屬於 main套件。  
+### 第 2 行： 讓我們匯入fmt套件中包含的檔案:  
 - "fmt" 和 "io" 是Go語言標準庫中的包,用於格式化輸入/輸出和實現基本的I/O操作。  
 - "os" 是Go語言標準庫中的包,提供了一些與操作系統相關的功能,比如文件操作、進程控制等。  
 - "path/filepath" 是Go語言標準庫中的包,提供了一些路徑相關的實用函數。  
