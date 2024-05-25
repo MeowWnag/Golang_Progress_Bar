@@ -87,35 +87,41 @@ func copyFileWithProgress(sourceFile, targetDir string, progressBar *widget.Prog
 	}
 	defer source.Close()
 
+	//創建或覆蓋檔案，並在操作完成後正確關閉檔案
 	target, err := os.Create(targetFile)
 	if err != nil {
 		fmt.Println("Error: ", err)
 		return
 	}
 	defer target.Close()
-
-	bufferSize := 1024 * 1024 // 1 MB
+	// 設定緩衝區大小為 1 MB
+	bufferSize := 1024 * 1024 
+	// 建立一個長度為 bufferSize 的 byte slice 作為緩衝區
 	buffer := make([]byte, bufferSize)
+	// 初始化已複製的總位元組數為 0
 	totalBytesCopied := 0
 
 	for {
+		// 從源中讀取數據到緩衝區
 		bytesRead, err := source.Read(buffer)
-		if err != nil && err != io.EOF {
+		if err != nil && err != io.EOF {// 如果發生錯誤且不是檔案結束錯誤
 			fmt.Println("Error: ", err)
 			return
 		}
-		if bytesRead == 0 {
+		if bytesRead == 0 {// 如果讀取的位元組數為 0，表示檔案已讀取完畢
 			break
 		}
-
+		// 將緩衝區中的數據寫入目標檔案
 		bytesWritten, err := target.Write(buffer[:bytesRead])
-		if err != nil {
+		if err != nil {// 如果寫入發生錯誤
 			fmt.Println("Error: ", err)
 			return
 		}
-
+		// 更新已複製的總位元組數
 		totalBytesCopied += bytesWritten
+		// 計算複製進度
 		progress := float64(totalBytesCopied) / float64(sourceFileStat.Size())
+		// 模擬慢速複製，方便查看進度條變化
 		progressBar.SetValue(progress)
 
 		// 模擬慢速複製，方便查看進度條變化
