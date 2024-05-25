@@ -48,7 +48,22 @@ go build run ProgressBar.go
 在Go語言中,nil是一個預設值,代表指標、函數、介面、Maps、Slices 和 Channels 的"無值"或空白值。它的語義稍有不同,具體取決於它所應用的類型，以33行來說，這裡的nil是用來檢查err和是否為空值
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/19ec21b3-bd5d-4626-b894-2f73035d06ae)  
 ---  
-在第49行中，widget.Button對象並將其賦值給變量copyButton。widget.NewButton函數接受兩個參數:第一個是按鈕上顯示的文字"Start Copy"，第二個是一個匿名函數,該函數將在按鈕被點擊時執行。(**注意**左大括號{不能出現在行首)這裏檢查了sourceFilePath和targetDirPath兩個變量是否為空字符串。如果有一個為空,就會彈出一個對話框,提示用戶選擇源文件和目標目錄。 
+在第49行中，widget.Button對象並將其賦值給變量copyButton。widget.NewButton函數接受兩個參數:第一個是按鈕上顯示的文字"Start Copy"，第二個是一個匿名函數,該函數將在按鈕被點擊時執行。(**注意**左大括號{不能出現在行首)  
+這裏檢查了sourceFilePath和targetDirPath兩個變量是否為空字符串。如果有一個為空,就會彈出一個對話框,提示用戶選擇源文件和目標目錄。   
+![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/2cdf7bba-55d5-458b-9af2-91426bcec270)  
+---
+在第60行，我們創建一個垂直盒子佈局(VBox)。這個垂直盒子包含了以下控制元件:  
+- selectSourceButton: 一個按鈕控制元件,可能用於選擇源文件或目錄。  
+- sourceFileLabel: 一個標籤控制元件,可能用於顯示選擇的源文件或目錄路徑。  
+- selectTargetButton: 一個按鈕控制元件,可能用於選擇目標目錄。  
+- targetDirLabel: 一個標籤控制元件,可能用於顯示選擇的目標目錄路徑。  
+- copyButton: 一個按鈕控制元件,可能用於執行拷貝操作。  
+- progressBar: 一個進度條控制元件,可能用於顯示拷貝進度。  
+這些控制元件被垂直排列在一個盒子佈局中,可能用於構建一個文件拷貝工具的用戶界面。當用戶點擊相關按鈕時,應用程序會執行相應的操作,如選擇源文件、選擇目標目錄、執行拷貝操作等,並在標籤和進度條中實時顯示相關信息。
+![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/056db91f-dd55-4ec6-acf5-0fc5ee1ba5a7)
+
+
+
 
 
 
