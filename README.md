@@ -68,7 +68,7 @@ go build run ProgressBar.go
 ***
 ### 在第76行，os.Stat(sourceFile) 這行代碼的作用是獲取指定文件或目錄的文件信息(metadata)，其中 **os** 是 Go 語言中一個內建的包(package),提供了操作系統相關的功能,比如文件系統的操作。  
 ### **Stat** 是 os 包中的一個函數,它的作用是返回一個描述指定文件對象(文件或目錄)的 FileInfo 類型值。  
-**sourceFile** 是一個字符串類型的變量,表示你要獲取文件信息的文件路徑。  
+### **sourceFile** 是一個字符串類型的變量,表示你要獲取文件信息的文件路徑。  
 ### 該函數的返回值有兩個,第一個返回值 sourceFileStat 是一個 FileInfo 類型的值,包含了該文件的元數據信息,比如文件大小、修改時間、權限等。第二個返回值 err 是一個 error 類型的值,用於判斷操作是否出現錯誤。  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/3cab14f8-790e-4883-b0da-578ea032efd0)  
 ***
