@@ -47,7 +47,9 @@ go build run ProgressBar.go
 ---
 在Go語言中,nil是一個預設值,代表指標、函數、介面、Maps、Slices 和 Channels 的"無值"或空白值。它的語義稍有不同,具體取決於它所應用的類型，以33行來說，這裡的nil是用來檢查err和是否為空值
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/19ec21b3-bd5d-4626-b894-2f73035d06ae)  
-左大括號{不能出現在行首
+---  
+在第49行中，widget.Button對象並將其賦值給變量copyButton。widget.NewButton函數接受兩個參數:第一個是按鈕上顯示的文字"Start Copy"，第二個是一個匿名函數,該函數將在按鈕被點擊時執行。(**注意**左大括號{不能出現在行首)這裏檢查了sourceFilePath和targetDirPath兩個變量是否為空字符串。如果有一個為空,就會彈出一個對話框,提示用戶選擇源文件和目標目錄。 
+
 
 
 
