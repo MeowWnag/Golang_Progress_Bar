@@ -40,7 +40,7 @@ go build run ProgressBar.go
 - "fyne.io/fyne/v2/container" 是Fyne工具包中的一個包,提供了一些常用的容器組件,如水平或垂直佈局等。  
 - "fyne.io/fyne/v2/dialog" 是Fyne工具包中的一個包,提供了一些常用的對話框,如文件選擇對話框、消息對話框等。  
 - "fyne.io/fyne/v2/widget" 是Fyne工具包中的一個包,提供了一些常用的GUI組件,如按鈕、標籤、輸入框等。  
-總而言之,這段代碼導入了Go語言標準庫中的一些常用包,以及Fyne跨平台GUI工具包中的一些核心包,為構建GUI應用程序做好準備  
+### 總而言之,這段代碼導入了Go語言標準庫中的一些常用包,以及Fyne跨平台GUI工具包中的一些核心包,為構建GUI應用程序做好準備  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/56a12293-193e-4495-bf82-e7a8b2148ab6)  
 ***    
 在 Golang 中，宣告變數時，可以直接指定值，或者使用型別推導，更簡單地用 := 來宣告局部變數。例如:  
