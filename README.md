@@ -43,13 +43,13 @@ go build run ProgressBar.go
 ### 總而言之,這段代碼導入了Go語言標準庫中的一些常用包,以及Fyne跨平台GUI工具包中的一些核心包,為構建GUI應用程序做好準備  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/56a12293-193e-4495-bf82-e7a8b2148ab6)  
 ***    
-在 Golang 中，宣告變數時，可以直接指定值，或者使用型別推導，更簡單地用 := 來宣告局部變數。例如:  
+### 在 Golang 中，宣告變數時，可以直接指定值，或者使用型別推導，更簡單地用 := 來宣告局部變數。例如:  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/8abe91d1-5e30-4d2e-a32f-fe223c1286b5)  
-也可以使用 var 關鍵字進行普通聲明，然後指定變數名稱和類型，再賦予初始值。例如:  
+### 也可以使用 var 關鍵字進行普通聲明，然後指定變數名稱和類型，再賦予初始值。例如:  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/37685800-5b66-4993-9af2-dd971f6e7410)  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/fce2856d-fc5e-4434-8d8f-ced0435f55f4)
 ***
-在Go語言中,nil是一個預設值,代表指標、函數、介面、Maps、Slices 和 Channels 的"無值"或空白值。它的語義稍有不同,具體取決於它所應用的類型，以33行來說，這裡的nil是用來檢查err和是否為空值
+### 在Go語言中,nil是一個預設值,代表指標、函數、介面、Maps、Slices 和 Channels 的"無值"或空白值。它的語義稍有不同,具體取決於它所應用的類型，以33行來說，這裡的nil是用來檢查err和是否為空值
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/19ec21b3-bd5d-4626-b894-2f73035d06ae)  
 ***  
 ### 在第49行中，widget.Button對象並將其賦值給變量copyButton。widget.NewButton函數接受兩個參數:第一個是按鈕上顯示的文字"Start Copy"，第二個是一個匿名函數,該函數將在按鈕被點擊時執行。(**注意**左大括號{不能出現在行首)  
