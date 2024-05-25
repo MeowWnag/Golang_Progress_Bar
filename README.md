@@ -53,7 +53,7 @@ go build run ProgressBar.go
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/19ec21b3-bd5d-4626-b894-2f73035d06ae)  
 ***  
 ### 在第49行中，widget.Button對象並將其賦值給變量copyButton。widget.NewButton函數接受兩個參數:第一個是按鈕上顯示的文字"Start Copy"，第二個是一個匿名函數,該函數將在按鈕被點擊時執行。(**注意**左大括號{不能出現在行首)  
-這裏檢查了sourceFilePath和targetDirPath兩個變量是否為空字符串。如果有一個為空,就會彈出一個對話框,提示用戶選擇源文件和目標目錄。   
+### 這裏檢查了sourceFilePath和targetDirPath兩個變量是否為空字符串。如果有一個為空,就會彈出一個對話框,提示用戶選擇源文件和目標目錄。   
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/2cdf7bba-55d5-458b-9af2-91426bcec270)  
 ***
 ### 在第60行，我們創建一個垂直盒子佈局(VBox)。這個垂直盒子包含了以下控制元件:  
