@@ -57,12 +57,12 @@ go build run ProgressBar.go
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/2cdf7bba-55d5-458b-9af2-91426bcec270)  
 ---
 ### 在第60行，我們創建一個垂直盒子佈局(VBox)。這個垂直盒子包含了以下控制元件:  
-- selectSourceButton: 一個按鈕控制元件,可能用於選擇源文件或目錄。  
-- sourceFileLabel: 一個標籤控制元件,可能用於顯示選擇的源文件或目錄路徑。  
-- selectTargetButton: 一個按鈕控制元件,可能用於選擇目標目錄。  
-- targetDirLabel: 一個標籤控制元件,可能用於顯示選擇的目標目錄路徑。  
-- copyButton: 一個按鈕控制元件,可能用於執行拷貝操作。  
-- progressBar: 一個進度條控制元件,可能用於顯示拷貝進度。  
+- ### selectSourceButton: 一個按鈕控制元件,可能用於選擇源文件或目錄。  
+- ### sourceFileLabel: 一個標籤控制元件,可能用於顯示選擇的源文件或目錄路徑。  
+- ### selectTargetButton: 一個按鈕控制元件,可能用於選擇目標目錄。  
+- ### targetDirLabel: 一個標籤控制元件,可能用於顯示選擇的目標目錄路徑。  
+- ### copyButton: 一個按鈕控制元件,可能用於執行拷貝操作。  
+- ### progressBar: 一個進度條控制元件,可能用於顯示拷貝進度。  
 這些控制元件被垂直排列在一個盒子佈局中,可能用於構建一個文件拷貝工具的用戶界面。當用戶點擊相關按鈕時,應用程序會執行相應的操作,如選擇源文件、選擇目標目錄、執行拷貝操作等,並在標籤和進度條中實時顯示相關信息。
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/3a1652f4-0b19-47ef-a9b1-f8cd8cf1a879)
 ***
