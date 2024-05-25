@@ -17,7 +17,7 @@ go build run ProgressBar.go
 ```
 ---
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/d317e269-780e-4488-aba1-da5e1d306ba7)   
-3.  點擊"Select Source File"和"Select Target Directory"選擇要複製的檔案與要複製的位置(**注意!!!**這裡只有英文能正常顯示，中文會變成?圖示)  
+3.  點擊"Select Source File"和"Select Target Directory"選擇要複製的檔案與要複製的位置( ** 注意!!! **這裡只有英文能正常顯示，中文會變成?圖示)  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/aaff98fd-526f-49e7-8a73-c0d0ffb4f99e)  
 4.  點擊"Start Copy"程式就會開始執行複製，同時下面的進度條也會開始跑  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/3636e2a6-94da-4c91-b497-985c7247c8c1)  
