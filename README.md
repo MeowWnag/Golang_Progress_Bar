@@ -24,6 +24,21 @@ go build run ProgressBar.go
 5.  複製完成後會跳出"File copied successfully!"的訊息  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/ef8bb815-d764-4b25-8593-26a08d916dab)  
 ***
+## 程式碼簡介
+第 1 行：在 Go 中，每個程式都是套件的一部分。我們使用關鍵字來定義它 package。在此範例中，程式屬於 main套件。
+第 2 行： 讓我們匯入fmt套件中包含的檔案，
+"fmt" 和 "io" 是Go語言標準庫中的包,用於格式化輸入/輸出和實現基本的I/O操作。
+"os" 是Go語言標準庫中的包,提供了一些與操作系統相關的功能,比如文件操作、進程控制等。
+"path/filepath" 是Go語言標準庫中的包,提供了一些路徑相關的實用函數。
+"time" 是Go語言標準庫中的包,用於處理時間和日期相關的操作。
+"fyne.io/fyne/v2" 是Fyne跨平台GUI工具包的主包,提供了基本的GUI組件和事件處理機制。
+"fyne.io/fyne/v2/app" 是Fyne工具包中的一個包,用於創建和管理應用程序實例。
+"fyne.io/fyne/v2/container" 是Fyne工具包中的一個包,提供了一些常用的容器組件,如水平或垂直佈局等。
+"fyne.io/fyne/v2/dialog" 是Fyne工具包中的一個包,提供了一些常用的對話框,如文件選擇對話框、消息對話框等。
+"fyne.io/fyne/v2/widget" 是Fyne工具包中的一個包,提供了一些常用的GUI組件,如按鈕、標籤、輸入框等。
+總而言之,這段代碼導入了Go語言標準庫中的一些常用包,以及Fyne跨平台GUI工具包中的一些核心包,為構建GUI應用程序做好準備
+![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/56a12293-193e-4495-bf82-e7a8b2148ab6)
+
 
 
 
