@@ -48,14 +48,14 @@ go build run ProgressBar.go
 也可以使用 var 關鍵字進行普通聲明，然後指定變數名稱和類型，再賦予初始值。例如:  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/37685800-5b66-4993-9af2-dd971f6e7410)  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/fce2856d-fc5e-4434-8d8f-ced0435f55f4)
----
+***
 在Go語言中,nil是一個預設值,代表指標、函數、介面、Maps、Slices 和 Channels 的"無值"或空白值。它的語義稍有不同,具體取決於它所應用的類型，以33行來說，這裡的nil是用來檢查err和是否為空值
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/19ec21b3-bd5d-4626-b894-2f73035d06ae)  
----  
+***  
 在第49行中，widget.Button對象並將其賦值給變量copyButton。widget.NewButton函數接受兩個參數:第一個是按鈕上顯示的文字"Start Copy"，第二個是一個匿名函數,該函數將在按鈕被點擊時執行。(**注意**左大括號{不能出現在行首)  
 這裏檢查了sourceFilePath和targetDirPath兩個變量是否為空字符串。如果有一個為空,就會彈出一個對話框,提示用戶選擇源文件和目標目錄。   
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/2cdf7bba-55d5-458b-9af2-91426bcec270)  
----
+***
 ### 在第60行，我們創建一個垂直盒子佈局(VBox)。這個垂直盒子包含了以下控制元件:  
 - ### selectSourceButton: 一個按鈕控制元件,可能用於選擇源文件或目錄。  
 - ### sourceFileLabel: 一個標籤控制元件,可能用於顯示選擇的源文件或目錄路徑。  
@@ -71,10 +71,10 @@ go build run ProgressBar.go
 **sourceFile** 是一個字符串類型的變量,表示你要獲取文件信息的文件路徑。  
 該函數的返回值有兩個,第一個返回值 sourceFileStat 是一個 FileInfo 類型的值,包含了該文件的元數據信息,比如文件大小、修改時間、權限等。第二個返回值 err 是一個 error 類型的值,用於判斷操作是否出現錯誤。  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/3cab14f8-790e-4883-b0da-578ea032efd0)  
----
+***
 第88行，這行代碼使用了 Go 語言中的 defer 關鍵字。它的作用是在當前函數執行完畢後,延遲執行 source.Close() 語句。  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/9c067492-b8d2-405f-a37a-58c1655707f7)  
----
+
 
 
 
