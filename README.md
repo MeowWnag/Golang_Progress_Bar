@@ -60,7 +60,8 @@ go build run ProgressBar.go
 - copyButton: 一個按鈕控制元件,可能用於執行拷貝操作。  
 - progressBar: 一個進度條控制元件,可能用於顯示拷貝進度。  
 這些控制元件被垂直排列在一個盒子佈局中,可能用於構建一個文件拷貝工具的用戶界面。當用戶點擊相關按鈕時,應用程序會執行相應的操作,如選擇源文件、選擇目標目錄、執行拷貝操作等,並在標籤和進度條中實時顯示相關信息。
-![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/056db91f-dd55-4ec6-acf5-0fc5ee1ba5a7)
+![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/056db91f-dd55-4ec6-acf5-0fc5ee1ba5a7)  
+---  
 
 
 
