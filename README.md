@@ -52,7 +52,7 @@ go build run ProgressBar.go
 在Go語言中,nil是一個預設值,代表指標、函數、介面、Maps、Slices 和 Channels 的"無值"或空白值。它的語義稍有不同,具體取決於它所應用的類型，以33行來說，這裡的nil是用來檢查err和是否為空值
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/19ec21b3-bd5d-4626-b894-2f73035d06ae)  
 ***  
-在第49行中，widget.Button對象並將其賦值給變量copyButton。widget.NewButton函數接受兩個參數:第一個是按鈕上顯示的文字"Start Copy"，第二個是一個匿名函數,該函數將在按鈕被點擊時執行。(**注意**左大括號{不能出現在行首)  
+### 在第49行中，widget.Button對象並將其賦值給變量copyButton。widget.NewButton函數接受兩個參數:第一個是按鈕上顯示的文字"Start Copy"，第二個是一個匿名函數,該函數將在按鈕被點擊時執行。(**注意**左大括號{不能出現在行首)  
 這裏檢查了sourceFilePath和targetDirPath兩個變量是否為空字符串。如果有一個為空,就會彈出一個對話框,提示用戶選擇源文件和目標目錄。   
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/2cdf7bba-55d5-458b-9af2-91426bcec270)  
 ***
@@ -66,13 +66,13 @@ go build run ProgressBar.go
 ### 這些控制元件被垂直排列在一個盒子佈局中,可能用於構建一個文件拷貝工具的用戶界面。當用戶點擊相關按鈕時,應用程序會執行相應的操作,如選擇源文件、選擇目標目錄、執行拷貝操作等,並在標籤和進度條中實時顯示相關信息。
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/3a1652f4-0b19-47ef-a9b1-f8cd8cf1a879)
 ***
-在第76行，os.Stat(sourceFile) 這行代碼的作用是獲取指定文件或目錄的文件信息(metadata)，其中 **os** 是 Go 語言中一個內建的包(package),提供了操作系統相關的功能,比如文件系統的操作。  
+### 在第76行，os.Stat(sourceFile) 這行代碼的作用是獲取指定文件或目錄的文件信息(metadata)，其中 **os** 是 Go 語言中一個內建的包(package),提供了操作系統相關的功能,比如文件系統的操作。  
 **Stat** 是 os 包中的一個函數,它的作用是返回一個描述指定文件對象(文件或目錄)的 FileInfo 類型值。  
 **sourceFile** 是一個字符串類型的變量,表示你要獲取文件信息的文件路徑。  
-該函數的返回值有兩個,第一個返回值 sourceFileStat 是一個 FileInfo 類型的值,包含了該文件的元數據信息,比如文件大小、修改時間、權限等。第二個返回值 err 是一個 error 類型的值,用於判斷操作是否出現錯誤。  
+### 該函數的返回值有兩個,第一個返回值 sourceFileStat 是一個 FileInfo 類型的值,包含了該文件的元數據信息,比如文件大小、修改時間、權限等。第二個返回值 err 是一個 error 類型的值,用於判斷操作是否出現錯誤。  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/3cab14f8-790e-4883-b0da-578ea032efd0)  
 ***
-第88行，這行代碼使用了 Go 語言中的 defer 關鍵字。它的作用是在當前函數執行完畢後,延遲執行 source.Close() 語句。  
+### 第88行，這行代碼使用了 Go 語言中的 defer 關鍵字。它的作用是在當前函數執行完畢後,延遲執行 source.Close() 語句。  
 ![image](https://github.com/MeowWnag/Golang_Progress_Bar/assets/119922838/9c067492-b8d2-405f-a37a-58c1655707f7)  
 
 
